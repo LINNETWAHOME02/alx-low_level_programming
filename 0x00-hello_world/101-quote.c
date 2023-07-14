@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
  * main - Printing a statement and new line after
- * Return: 1
+ * Return 1 (Code is successful)
  */
 int main(void)
 {
