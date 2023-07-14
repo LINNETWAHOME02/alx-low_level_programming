@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - Print lowercse then newline
  * Return: 0 (Code success)
@@ -8,14 +7,16 @@ int main(void)
 {
 	char lower;
 
-	lower = 'a';
-	while (lower <= 'z')
+	lower = 97;
+	while (lower <= 122)
 	{
-		if (lower != 'e' && lower != 'q')
+		if (lower == 101 && lower == 113)
 		{
-			putchar(lower);
 			lower++;
+			continue;
 		}
+		putchar(lower);
+		lower++;
 	}
 	putchar('\n');
 	return (0);
