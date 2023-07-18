@@ -1,1 +1,1 @@
-Directory for functions and nested loops in C
+Nested loops and functions
