@@ -2,16 +2,6 @@
 #include <stdlib.h>
 
 /**
- * is_positive: This function checks if the number is positive
- *
- * @num: Integer input
- * Return: number greater than 0
- */
-int is_positive(int num)
-{
-	return (num > 0);
-}
-/**
  * main - This function adds two positive numbers
  *
  * @argc: Number of arguments passed
@@ -29,7 +19,7 @@ int main(int argc, char *argv[])
 	count = 1;
 	while (count < argc) /*Goes through the whole array*/
 	{
-		if (is_positive(atoi(argv[count])))
+		if (atoi(argv[count]))
 
 		{
 			string_int = atoi(argv[count]);
