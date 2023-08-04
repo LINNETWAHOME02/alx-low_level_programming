@@ -1,10 +1,7 @@
-#include <stdio.h>
-/*
- * main - Printing statement
- * Return: 0 (Code sucess)
- */
+#include "main.h"
+
 int main(void)
 {
-	printf("My goal is to give my parents the world\n");
-	return (0);
+    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+    return (0);
 }
