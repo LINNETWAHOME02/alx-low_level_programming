@@ -1,10 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-/*
+/**
  * *malloc_checked - This function allocates memory using malloc
- *
- * @b - (size_t size) Bytes to be reserved
+ * @b: Bytes to be reserved (size_t size)
  *
  * Return: Pointer allocated to memory
  */
