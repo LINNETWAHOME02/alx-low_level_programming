@@ -18,10 +18,9 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
 	{
-		printf("Error: pointer cannot be NULL/empty\n");
-		return;
+		printf("Error: pointer cannot be NULL/empty.\n");
 	}
 	(*d).name = name;
-	d -> age = age;
-	d -> owner = owner;
+	d->age = age;
+	d->owner = owner;
 }
