@@ -1,5 +1,4 @@
 #include "function_pointers.h"
-#include <stdlib.h>
 /**
  * int_index - This function searches for an integer
  * @array: Array pointer that points to the elements in the array
@@ -21,9 +20,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 			if (cmp(array[iterator]) != 0)
 				return (iterator);
 		}
-	} else
-	{
-		exit(98);
 	}
 	return (-1);
 }
