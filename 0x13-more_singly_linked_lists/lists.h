@@ -2,9 +2,9 @@
 #define LISTS_H
 #include <stddef.h>
 
-typedef struct node {
+typedef struct listint_t {
 	int n;
-	struct node *next;
+	struct listint_t *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
