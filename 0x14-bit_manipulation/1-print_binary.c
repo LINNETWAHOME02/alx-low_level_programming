@@ -7,7 +7,21 @@
  */
 void print_binary(unsigned long int n)
 {
-	if (n > 1)
-		print_binary(n >> 1);
-	_putchar((n & 1) + '0');
+	int counter, tracker = 0;
+	unsigned long int current_num;
+
+	for (counter = 63; counter >= 0; counter--)
+	{
+		current_num = n >> counter;
+
+		if (current_num & 1)
+		{
+			_putchar('1');
+			tracker++;
+		}
+		else if (tracker)
+			_putchar('0');
+	}
+	if (!tracker)
+		_putchar('0');
 }
