@@ -10,6 +10,12 @@ void print_binary(unsigned long int n)
 	int counter, tracker = 0;
 	unsigned long int current_num;
 
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
+
 	for (counter = 63; counter >= 0; counter--)
 	{
 		current_num = n >> counter;
