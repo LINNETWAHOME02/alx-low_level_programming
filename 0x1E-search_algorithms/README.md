@@ -6,7 +6,7 @@
 * **0. Linear search**
 Write a function that searches for a value in an array of integers using the Linear search algorithm
 
-Prototype : int linear_search(int *array, size_t size, int value);
+Prototype : ``` int linear_search(int *array, size_t size, int value); ```
 Where array is a pointer to the first element of the array to search in
 size is the number of elements in array
 And value is the value to search for
@@ -18,7 +18,7 @@ Every time you compare a value in the array to the value you are searching, you 
 * **1. Binary search**
 Write a function that searches for a value in a sorted array of integers using the Binary search algorithm
 
-Prototype : int binary_search(int *array, size_t size, int value);
+Prototype : ``` int binary_search(int *array, size_t size, int value);```
 Where array is a pointer to the first element of the array to search in
 size is the number of elements in array
 And value is the value to search for
@@ -85,21 +85,21 @@ What is the time complexity (average case) of a jump search in an array of size 
 * **9. Interpolation search**
 Write a function that searches for a value in a sorted array of integers using the Interpolation search algorithm
 
-Prototype : int interpolation_search(int *array, size_t size, int value);
+Prototype : ``` int interpolation_search(int *array, size_t size, int value); ```
 Where array is a pointer to the first element of the array to search in
 size is the number of elements in array
 And value is the value to search for
 Your function must return the first index where value is located
 You can assume that array will be sorted in ascending order
 If value is not present in array or if array is NULL, your function must return -1
-To determine the probe position, you can use : size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]))
+To determine the probe position, you can use : ``` size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low])) ```
 Every time you compare a value in the array to the value you are searching, you have to print this value
 
 
 * **10. Exponential search**
 Write a function that searches for a value in a sorted array of integers using the Exponential search algorithm
 
-Prototype : int exponential_search(int *array, size_t size, int value);
+Prototype : ``` int exponential_search(int *array, size_t size, int value); ```
 Where array is a pointer to the first element of the array to search in
 size is the number of elements in array
 And value is the value to search for
@@ -116,7 +116,7 @@ You may have noticed that the basic binary search does not necessarily return th
 
 Write a function that searches for a value in a sorted array of integers.
 
-Prototype : int advanced_binary(int *array, size_t size, int value);
+Prototype : ``` int advanced_binary(int *array, size_t size, int value); ```
 Where array is a pointer to the first element of the array to search in
 size is the number of elements in array
 And value is the value to search for
@@ -153,7 +153,7 @@ typedef struct listint_s
 ```
 Write a function that searches for a value in a sorted list of integers using the Jump search algorithm.
 
-Prototype : listint_t *jump_list(listint_t *list, size_t size, int value);
+Prototype : ``` listint_t *jump_list(listint_t *list, size_t size, int value); ```
 Where list is a pointer to the head of the list to search in
 size is the number of nodes in list
 And value is the value to search for
@@ -166,7 +166,7 @@ Every time you compare a value in the list to the value you are searching, you h
 
 
 * **13. Linear search in a skip list**
-As you see now, looking for a specific value in a singly linked list always leads to browse every element of the list. A common way to optimize the time complexity of a search in a singly linked list is to modify the list itself by adding an “express lane” to browse it. A linked list with an express lane is called a skip list. This change does not come without consequences. Indeed, the space complexity of a search in this kind of list will grow as sizeof(skiplist_t) > sizeof(listint_t) (see example below).
+As you see now, looking for a specific value in a singly linked list always leads to browse every element of the list. A common way to optimize the time complexity of a search in a singly linked list is to modify the list itself by adding an “express lane” to browse it. A linked list with an express lane is called a skip list. This change does not come without consequences. Indeed, the space complexity of a search in this kind of list will grow as ``` sizeof(skiplist_t) > sizeof(listint_t) ```
 
 Please define the following data structure in your search_algos.h header file:
 ```
@@ -193,7 +193,7 @@ typedef struct skiplist_s
 
 Write a function that searches for a value in a sorted skip list of integers.
 
-Prototype : skiplist_t *linear_skip(skiplist_t *list, int value);
+Prototype : ``` skiplist_t *linear_skip(skiplist_t *list, int value); ```
 Where list is a pointer to the head of the skip list to search in
 A node of the express lane is placed every index which is a multiple of the square root of the size of the list (see example below)
 And value is the value to search for
